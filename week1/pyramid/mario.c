@@ -20,6 +20,10 @@ int main(void){
     // build the pyramid
     for (int i = 0; i < levels; i++)
     {
+        for (int j = 0; j < levels - i - 1; j++)
+        {
+            printf(" ");
+        }
         print_row(i);
     }
     
